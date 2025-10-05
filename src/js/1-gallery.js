@@ -67,7 +67,7 @@ const images = [
 import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
-``
+
 const container = document.querySelector(".gallery");
 container.insertAdjacentHTML("beforeend", createMarkup(images));
 
@@ -85,7 +85,6 @@ function createMarkup(arr) {
                 <img
                     class="gallery-image"
                     src="${image.preview}"
-                    // data-source="${image.original}"
                     alt="${image.description}"
                     width ="360"
                     height = "200"
